@@ -1,0 +1,23 @@
+Learning braindumps via Visual CertExam sucks. It's not comfortable,
+and it doesn't hide questions you know well from you. Anki, on the other
+hand does this and many other things as well, making it perfect for learning
+any kind of material, not just braindumps.
+
+This is where this script is useful. You export the exam from VCE Designer to
+txt format, and then use this script to convert it to a .csv file that Anki can
+import. Some time later I might add direct conversion to .anki deck.
+
+The script is rough, but it works. The question and the answers goes to the first
+field. The correct answer(s) go to the second field. If there is some
+Explanation/Reference it is attached to the second field.
+
+Fields are separated by the tilde (~) character
+
+Open up the source, and figure out how it works. It's not that hard, and if you're
+on Github you probably can easily use it and improve upon it.
+
+That's it!
+
+I thought this little script written in mighty Python might help someone as much
+as it helped me, so here it is. I might add some features in the future, but
+if you need some feature, please take your time and code it yourself.
