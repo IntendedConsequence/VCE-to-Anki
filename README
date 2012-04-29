@@ -4,19 +4,29 @@ hand does this and many other things as well, making it perfect for learning
 any kind of material, not just braindumps.
 
 This is where this script is useful. You export the exam from VCE Designer to
-txt format, and then use this script to convert it to a .csv file that Anki can
-import. Some time later I might add direct conversion to .anki deck.
+txt format, and then use this script to convert it to a .anki deck which you can
+open in Anki.
 
 The script is rough, but it works. The question and the answers goes to the first
 field. The correct answer(s) go to the second field. If there is some
 Explanation/Reference it is attached to the second field.
 
-Fields are separated by the tilde (~) character
+This version is specifically tailored to work with ankimini. The main reason is
+that ankimini package already contains all the needed dependencies.
 
-Open up the source, and figure out how it works. It's not that hard, and if you're
-on Github you probably can easily use it and improve upon it.
+How to use:
+1) Download Python 2.7 if you don't have it installed already
+2) Download ankimini from here http://sourceforge.net/projects/ankimini/
+3) Extract ankimini to a directory of your choice
+4) In Visual CertExam Designer open the .vce exam you want to export to Anki
+5) Click File->Export to, and export to the ankimini directory as a test.txt file (this is important)
+6) Open test.txt file in Notepad++
+7) Click Encoding->Convert to utf-8 and save
+8) Save the vcetoanki.py to ankimini directory
+9) Double-click the vcetoanki.py
 
-That's it!
+That's it! If everything worked, now you should have a test.anki file in the ankimini folder.
+You can open it in Anki and study now.
 
 I thought this little script written in mighty Python might help someone as much
 as it helped me, so here it is. I might add some features in the future, but
