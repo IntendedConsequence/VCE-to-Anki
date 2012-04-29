@@ -14,8 +14,10 @@ Explanation/Reference it is attached to the second field.
 This version is specifically tailored to work with ankimini. The main reason is
 that ankimini package already contains all the needed dependencies.
 
+Note: I only tested this on Windows. It might work on Mac or Linux, I'm not sure.
+
 How to use:
-1) Download Python 2.7 if you don't have it installed already
+1) Download Python 2.7(32 bit) if you don't have it installed already
 2) Download ankimini from here http://sourceforge.net/projects/ankimini/
 3) Extract ankimini to a directory of your choice
 4) In Visual CertExam Designer open the .vce exam you want to export to Anki
