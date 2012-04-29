@@ -1,6 +1,9 @@
+import sys,os
+sys.path.insert(0,os.getcwd()+os.sep+"libanki")
+sys.path.append(os.getcwd()+os.sep+"simplejson")
+sys.path.append(os.getcwd()+os.sep+"sqlalchemy")
+
 import re
-import sys
-import os
 import codecs
 import hashlib
 import anki
@@ -30,7 +33,7 @@ class VceImporter(Importer):
     
     def foreignCards(self):
         lines = ''
-        with open("C:\\test.txt", 'r') as f:
+        with open("test.txt", 'r') as f:
             for line in f:
                 lines += line
 
@@ -64,7 +67,7 @@ class VceImporter(Importer):
     def fields(seld):
         return 2
 
-deck = DeckStorage.Deck(r'C:\test.anki')
+deck = DeckStorage.Deck(r'test.anki')
 deck.addModel(BasicModel())
 imp = VceImporter(deck, '')
 
